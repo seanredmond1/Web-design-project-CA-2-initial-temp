@@ -1,0 +1,185 @@
+<link rel="stylesheet" type="text/css" href="StyleSheet2.css" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  
+  body {/*This sections attributes seem to make no difference - they must be overwritten by another section, check this!*/
+    background-color: green;
+    color: pink;
+    font-family:Arial, 'Lucida Sans Unicode';
+    font-size:87.5%;
+    text-align:left;/*changing this makes no impact*/
+    line-height: 1.5;/*changing this makes no impact*/
+}
+
+a {
+    text-decoration: none;
+}
+    a:link, a:visited {
+        color:#062C5E;/* changes the colour of link headings*/
+    }
+    a:hover, a:active {
+         background-color:#cf5c3f;
+         color:#fff;
+    }
+
+.body {
+    margin: 0 auto;
+    width: 70%;
+    clear:both;
+	color: #074EAB;/*changes the color of font in body class*/
+	background-color: #ECC8EC;/*can change the background colour of whole website here or could do background image instead for design!*/
+}
+
+.mainHeader img {
+    width: 100%;
+    height: 325px;
+    margin: 2% 0;/*makes space between different sections of website*/
+}
+
+.mainHeader nav {
+    background-color:#A3A6C7;
+    color: #666;
+    height: 40px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+    .mainHeader nav ul {
+        list-style:none;
+        margin: 0 auto;
+    }
+
+        .mainHeader nav ul li {
+            display:inline;
+            float:left;/* this positions the buttons on the website navigation page*/
+        }
+
+    .mainHeader nav a:link, .mainHeader nav a:visited {
+        color: black;/*changes the colour of the text on the banner*/
+		font-size: 20px;
+        display:inline-block;
+        padding:10px 25px;
+        height:20px;/* This is the height of the colour of highlighted background when hover over the link button name*/
+    }
+
+    .mainHeader nav a:hover, .mainHeader nav a:active,
+    .mainHeader .active a:link, .mainHeader .active a:visited {
+        background-color:#CDD1FA;/*This changes the colour of the`background when hover over each button in the title */
+        text-shadow: none;
+    }
+
+    .mainHeader nav ul li a {
+        border-radius:5px;
+         -moz-border-radius:5px;
+         -webkit-border-radius:5px;
+    }
+
+.mainContent {
+    border-radius:5px;
+     -moz-border-radius:5px;
+     -webkit-border-radius:5px;
+     line-height:25px;
+}
+.content {
+    width:70%;
+    float:left;
+}
+
+
+/* can use just one of .topcontent or .bottom content and change in the html file as they are exactly the same */
+.topContent {
+    background-color:#d6e8e4;
+    padding: 2% 5%;
+    margin-top:2%;
+    border-radius:5px;
+     -moz-border-radius:5px;
+     -webkit-border-radius:5px;
+}
+.bottomContent {
+    background-color:#d6e8e4;
+    padding: 2% 5%;
+    margin-top:2%;
+    border-radius:5px;
+     -moz-border-radius:5px;
+     -webkit-border-radius:5px;
+}
+
+.description {
+    font-style:italic;
+    font-size: 120%;
+    color:#0C6FF0;
+}
+
+
+.eventSidebar {
+    width:21%;
+    float:left;
+    background-color:#d6e8e4;
+    margin:2% 0 2% 3%;
+    padding:2% 3%;
+    border-radius:5px;
+     -moz-border-radius:5px;
+     -webkit-border-radius:5px;
+	 
+}
+
+.eventSidebar  h2 {
+
+color:#062C5E;
+
+}
+
+.newsSidebar h2 {
+
+color:#062C5E;
+
+}
+.courseSidebar h2 {
+
+color:#062C5E;
+
+}
+
+.newsSidebar {
+    width:21%;
+    float:left;
+    background-color:#d6e8e4;
+    margin:0 0 2% 3%;
+    padding:2% 3%;
+    border-radius:5px;
+     -moz-border-radius:5px;
+     -webkit-border-radius:5px;
+}
+
+.courseSidebar {
+    width:21%;
+    float:left;
+    background-color:#d6e8e4;
+    margin:0 0 2% 3%;
+    padding:2% 3%;
+    border-radius:5px;
+     -moz-border-radius:5px;
+     -webkit-border-radius:5px;
+}
+
+
+.mainFooter {
+    width:100%;
+    height:40px;
+    float:left;
+    border-radius:5px;
+     -moz-border-radius:5px;
+     -webkit-border-radius:5px;
+    background-color: #CDD1FA;/*changes the colour of the banner */
+    margin:2% 0;
+}
+
+    .mainFooter p {
+        width:92%; /*Changing this amount changes where the text in the footer is placed */
+        margin: 10px auto;/* increasing this places the text in the footer further down the page*/
+        color:light blue;/*is the colour of the text (i.e because this is for the p tag for the footer)*/
+		font-size: 20px;
+    }
+
+
+

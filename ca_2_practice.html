@@ -1,0 +1,141 @@
+<!-- Learning points from this code:
+
+Tags and concepts used:
+
+</article> = The <article> tag specifies independent, self-contained content.
+</div> = The <div> (i.e a division (section) in HTML document. This tag is used to group block-elements to format them with CSS.
+</aside> = The <aside> tag defines some content aside from the content it is placed in. Tip: The <aside> content could be placed as a sidebar in an article.
+</header> = The <header> element represents a container for introductory content or a set of navigational links.	
+</footer> = can be for a document or a section. Usually contains things like: back to top links, contact information, related documents...
+
+What is the keyword class within tags used for? 
+The class attribute is mostly used to point to a class in a style sheet. (can also be used by JavaScript).
+ -->
+
+
+<!DOCTYPE html> <!----><!--The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="StyleSheet2.css" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+
+    <title>Sample Website</title>
+    <meta charset="utf-8" />
+	
+	<style><!--This is the template for links in the document -->
+	a:link {
+		color: purple;<!-- This is not changing the colour of the link for some reason! -->
+		background-color:transparent;
+		text-decoration:none;
+	}
+	a:visited {
+		color:#000000;
+		background-color:transparent;
+		text-decoration:none;
+	}
+	a:hover {
+		color:green;
+		background-color:transparent;
+		text-decoration:underline;
+	}
+	a:active {
+		color:#ff0000;
+		background-color:transparent;
+		text-decoration:underline;
+	}
+	</style>
+
+</head>
+
+<body class = "body">
+
+
+    <header class = "mainHeader"> <!--This header has the image on top and the button navigation banner-->
+	
+        <img src="nci image 2.jpg" width "180" height "400" alt "nci"/>
+		<!-- The width and height don't work here but I edited these properties in the .mainHeader img section in the css file. just leaving this here for learning purposes -->
+			
+
+        <nav><ul><!-- The <nav> tag defines a set of navigation links, the # means go to same page apparently! -->
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="products.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul></nav>
+
+    </header>
+	
+	
+		
+	<div class="mainContent">
+        <div class="content">
+            <article class="topContent">
+                
+                <header>
+                    <h2><a href="#" title="About us"><u>What we do</u></a></h2><!--the # brings user to the top of the page for this link (see about us on hover) -->
+                </header>
+
+                <footer>
+                    <p class="description">Providing education for 60 years...</p>
+                 </footer>
+
+                <p>See our <a href="https://www.ncirl.ie/Courses/Course-Category/field/Part-Time%20Courses">part time courses</a>. They are amongst the 
+				best in Europe. We’re committed to helping you <b>achieve your potential.</b> Our full and part-time courses can help you up skill, 
+				advance in your career or return to employment. We offer <b>recognised qualifications</b>, great student support and a friendly 
+				city centre campus. We are focused on ensuring each student receives the support and assistance necessary to realise their
+				potential. There are many great reasons to choose NCI.</p>
+     
+            </article>
+
+            <article class="bottomContent">
+                
+                <header>
+                    <h2><a href="#" title="Popular Courses"><u>Highly Relevant Courses</u></a></h2><!--the # just brings user to the top of the page for this link -->
+                </header>
+
+                <footer>
+                    <p class="description">Courses that help building your career...</p>
+                 </footer>
+
+                <p>Through our schools of business and computing <b>we offer internationally recognised full and part-time programmes</b> 
+				accredited through QQI. We work closely with industry and professional bodies such as Chartered Institute of Personnel and 
+				Development, Institute of Commercial Management, Irish Institute of Pensions Management, the Sales Institute of Ireland and
+				others to ensure courses closely aligned to industry needs.</p>
+				<p>At NCI we have a variety of postgraduate courses in the areas of computing, business and psychology.
+				We also have part-time postgraduate courses with classes that are carried out in the evening and on weekends.</p>
+
+            </article>
+        </div>
+    </div>
+	
+	   <aside class="eventSidebar">
+        <article>
+            <h2>Events this week</h2>
+            <p>Parental Involvement in children’s education...</p>
+			<p>Parental Involvement in children’s education...</p>
+        </article>
+    </aside>
+	
+    <aside class="newsSidebar">
+        <article>
+            <h2>News this week</h2>
+            <p><b>Innovative thinking</b> to fully harness the potential of The Cloud...</p>
+        </article>
+    </aside>
+	
+	
+    <aside class="courseSidebar">
+        <article>
+            <h2>Courses at NCI</h2>
+            <p><b>Realise your potential</b> at National College of Ireland. Postgraduate and undergraduate courses in business, computing, accountancy, human resources, marketing, psychology and more.</p>
+        </article>
+    </aside>
+
+	
+	  <footer class="mainFooter">
+        <p>Copyright &copy: <a href="#" title="Web Design">Go to top of page</a></p>
+    </footer>
+	
+</body>
+</html>
